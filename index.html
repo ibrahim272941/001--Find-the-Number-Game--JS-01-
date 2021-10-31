@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header-container area">
+            <div class="header__title">
+                <h2>Guess The Number ( <span>1-10</span>)</h2>
+    
+            </div>
+        </div>
+
+        <div class="input-container area">
+            <div class="entry">
+
+                <input type="number" name="number" id="number">
+                <button type="button" id ="button">Check</button>
+            </div>
+        </div>
+        <div id="result" class="result-container area">
+            <img id="congrats" src="congratulations-icegif-7.gif" alt="">
+            <img src="attention.jpg" alt="" id="attempt-img">
+            <img src="gameover.jpg" alt="" id="gameover">
+        </div>
+        <div class="attempt-container area">
+           
+            <p id="attempt"></p>
+            
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

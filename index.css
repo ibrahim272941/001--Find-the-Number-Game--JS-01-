@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+   
+   max-width: 100%;
+   
+    background-image: url(logo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-container{
+   text-align: center;
+   height: 7rem;
+}
+.input-container{ 
+    text-align: center;
+    height: 7rem;
+}
+.result-container{
+    text-align: center;
+    width: 26rem;
+    height: 21rem;
+  
+    position: relative;
+}
+.attempt-container{ 
+    text-align: center;
+    height: 7rem;
+}
+h2 , h3 , .entry, p{
+    padding-top: 3rem;
+    
+    
+}
+h2{
+    padding-top: 3rem;
+    color: rgb(204, 243, 30);
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    font-weight: bolder;
+    text-shadow: 6px 6px 6px black;
+}
+span{
+    padding-top: 3rem;
+    color: rgb(243, 82, 8);
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    font-weight: bolder;
+}
+input , button{
+   
+    height: 2.5rem;
+    font-size: larger;
+}
+button{
+    width: 4rem;
+    color: white;
+    background-color: rgb(99, 7, 185);
+    cursor: pointer;
+}
+
+#attempt{
+    
+    color: rgb(146, 148, 12);
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#gameover{
+    width: 24rem;
+    height: 18rem;
+    position: absolute;
+    top: .7rem;
+    left: 1.2rem;
+    display: none;
+    border-radius: 50% 50% 2rem 2rem ;
+    box-shadow: 5px 5px 5px red;
+}
+#attempt-img{
+    width: 24rem;
+    height: 18rem;
+    position: absolute;
+    top: .7rem;
+    left: 1.2rem;
+    display: none; 
+    border-radius: 50% 50% 2rem 2rem ;
+    box-shadow: 5px 5px 5px rgb(223, 233, 209);
+}
+#congrats{
+    position:absolute;
+    border-radius: 50% 50% 2rem 2rem ;
+    display: none;
+    box-shadow: 5px 5px 5px rgb(197, 250, 123);
+}
+@media(max-width :850px){
+    h2{
+       
+       
+        font-size: 2rem;
+        letter-spacing: .2rem;
+        
+    }
+    #gameover{
+        
+        width: 15rem;
+        height: 15rem;
+        position: absolute;
+        margin-left: 2rem;
+        top: .7rem;
+        left:5rem;
+        
+    }
+    #attempt-img{
+       
+        width: 15rem;
+        height: 15rem;
+        position: absolute;
+        top: .7rem;   
+        display: none; 
+        left:5rem;
+    }
+}@media(max-width:575px){
+    #gameover{
+        width: 10rem;
+        height: 10rem;
+       
+        top: 2rem;   
+        
+        left:6rem;
+    }
+    #attempt-img{
+        width: 10rem;
+        height: 10rem;
+        
+        top: 2rem;   
+        
+        left:7rem;
+    }
+    #congrats{
+        width: 18rem;
+        height: 15rem;
+        top: 2rem;   
+        
+        left:4rem;
+    }
+    .entry{
+        margin-top: .2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+        
+    span{
+        font-size: 1.6rem;
+    }
+    }
+
+@media(max-width:480px){
+    h2{
+        padding-top: 5rem;
+        
+        font-size: 1rem;
+    
+        font-weight: bolder;
+    }
+    span{
+        font-size: 1.2rem;
+    }
+   
+    .entry{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+
+    
+}
